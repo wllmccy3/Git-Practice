@@ -7,16 +7,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Willie McCoy III">
         <link rel="stylesheet" href="style.css">
+        <script src="math.js"></script>
     </head>
 
     <body>
         <main>
             <h1>The Calculator | Willie McCoy III</h1>
-                <table > 
+            <table>
+                <thead>
+                    <caption>Make sure to clear the display before doing another equation.</caption> 
                     <tr> 
-                        <td colspan="3"><div id="display"></div></td> 
+                        <td colspan="3" class="gray">
+                            <div id="display">0</div>
+                        </td> 
                         <td><button id="$clear">C</button></td>
-                    </tr> 
+                    </tr>
+                </thead>
+                <tbody>
                     <tr> 
                         <td><button id="b1">1</button></td> 
                         <td><button id="b2">2</button></td> 
@@ -39,11 +46,10 @@
                         <td><button id="b0">0</button></td> 
                         <td colspan="2"><button id="Zequals">=</button></td> 
                         <td><button id="Qmultiply">*</button></td> 
-                    </tr> 
+                    </tr>
+                </tbody>
             </table>
         </main>
-
-        <script src="math.js"></script>
             
     </body>
 
