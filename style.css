@@ -108,14 +108,13 @@ caption{
     }
     
     60% {
-
     color: blue;
     }
     
     70% {
-
     color: #2980b9;
     }
+
     80% {
     color: #f1c40f;
     }
@@ -131,16 +130,4 @@ caption{
 
 .gray{
     background-color: gray;
-}
-
-.bottom-left{
-    border-bottom-left-radius: 25px;
-}
-
-.bottom-right{
-    border-bottom-right-radius: 25px;
-}
-
-.top-right{
-    border-top-right-radius: 25px;
 }
