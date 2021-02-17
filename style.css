@@ -1,9 +1,11 @@
 body{
-    background-color: 	#4A412A;
     color: turquoise;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     padding: 20px;
+    background: url() repeat-y 100% 100% fixed;
+    height: 100%;
+    width: 100%;
 }
 
 table, th, td {
@@ -22,8 +24,8 @@ table, th, td {
 }
 
 table {
-    width: 65%;
-    height: 350px;
+    width: 50%;
+    height: 450px;
     background-color:#d9d9d9;
     margin: auto;
 }
@@ -51,6 +53,7 @@ button{
     cursor: pointer;
     width: 100%;
     height: 100%;
+    transition: .25s all;
 }
 
 button:hover{
@@ -114,7 +117,7 @@ caption{
     70% {
     color: #2980b9;
     }
-
+    
     80% {
     color: #f1c40f;
     }
@@ -130,4 +133,34 @@ caption{
 
 .gray{
     background-color: gray;
+}
+
+h1 {
+    text-align: center;
+}
+
+.floating {   
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+    margin-left: 30px; 
+    margin-top: 5px; 
+} 
+
+@keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 15px); } 
+    100%   { transform: translate(0, -0px); }     
+} 
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.gif-container {
+    background: url("MovingBG.gif") center;
+    background-size: cover;
+    height: 100%;
 }
